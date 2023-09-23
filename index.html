@@ -24,7 +24,7 @@
                 <h3 class="modal-heading">Leave your contacts and we will call you back</h3>
                 <form class="modal-form">
                     <div class="modal-form-input_group" role="group">
-                        <label class="modal-form-label">
+                        <label class="modal-form-label" for="full-name">
                             <span class="form-label-text">Name</span>
                             <input class="form-label-input" type="name" name="full-name" autofocus required/>
                             <svg class="form-input-icon">
@@ -32,7 +32,7 @@
                             </svg>
                         </label>
                         
-                        <label class="modal-form-label">
+                        <label class="modal-form-label" for="phone">
                             <span class="form-label-text">Phone</span>
                             <input class="form-label-input" type="tel" name="phone" required/>
                             <svg class="form-input-icon input-icon">
@@ -40,7 +40,7 @@
                             </svg>
                         </label>
                         
-                        <label class="modal-form-label">
+                        <label class="modal-form-label" for="email">
                             <span class="form-label-text">Email</span>
                             <input class="form-label-input" type="email" name="email" required/>
                                 <svg class="form-input-icon input-icon">
@@ -48,13 +48,13 @@
                                 </svg>
                         </label>
                         
-                        <label class="modal-form-input_group-label">
+                        <label class="modal-form-input_group-label" for="comment">
                             <span class="form-label-text">Comment</span>
                             <textarea class="form-label-input form-textarea" name="comment" placeholder="Text input" required></textarea>
                         </label>
                     </div>
                     <label class="modal-form-privacy-label">
-                        <input type="checkbox" class="modal-form-privacy-label-checkbox" name="policy" value="policy"/>
+                        <input type="checkbox" class="modal-form-privacy-label-checkbox visually-hidden" name="policy" value="policy"/>
                             <svg class="modal-form-privacy-label-icon">
                                 <use href="./images/icons.svg#check"></use>
                             </svg>

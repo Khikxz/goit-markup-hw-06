@@ -54,6 +54,7 @@ img{
 }
 
 .board-container{
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 48px;
@@ -563,13 +564,23 @@ img{
     cursor: pointer;
     z-index: 6;
     opacity: 1;
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing); 
 }
 
-.modal-form-privacy-label-checkbox:checked {
-    opacity: 0;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.modal-form-privacy-label-checkbox:checked + .modal-form-privacy-label-icon {
+    background-color: var(--ocean);
 }
 
 .modal-form-privacy-label-icon{
@@ -578,13 +589,24 @@ img{
     width: 13px;
     height: 13px;
     z-index: 5;
-    fill: var(--ocean);
+    fill: var(--white);
     stroke-width: 1px;
-    stroke: var(--ocean);
+    stroke: var(--white);
+    background-color: var(--white);
+    border: 1px solid var(--lightslate);
+    border-radius: 2px;
+    transition-property: background, border;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing); 
+}
+
+.modal-form-privacy-label-icon:hover{
+    cursor: pointer;
 }
 
 .modal-form-privacy-label-text{
     width: 338px;
+    margin-left: 21px;
 }
 
 .privacy-link{
