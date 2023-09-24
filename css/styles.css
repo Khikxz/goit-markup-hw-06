@@ -547,7 +547,7 @@ img{
 
 .modal-form-privacy-label{ 
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
     width: 360px;
     flex-shrink: 0;
@@ -581,17 +581,16 @@ img{
 
 .modal-form-privacy-label-checkbox:checked + .modal-form-privacy-label-icon {
     background-color: var(--ocean);
+    border: 1px solid var(--ocean);
 }
 
 .modal-form-privacy-label-icon{
     display: flex;
     position: absolute;
-    width: 13px;
-    height: 13px;
+    width: 16px;
+    height: 16px;
     z-index: 5;
     fill: var(--white);
-    stroke-width: 1px;
-    stroke: var(--white);
     background-color: var(--white);
     border: 1px solid var(--lightslate);
     border-radius: 2px;
